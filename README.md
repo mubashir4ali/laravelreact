@@ -20,6 +20,7 @@ Above user will be created upon migration.
 # To Start Laravel
 - cd laravel
 - composer install
+- php artisan key:generate
 - php artisan migrate
 - php artisan serve
 ### keep that running in the terminal

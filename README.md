@@ -1,6 +1,6 @@
 # Laravel React
 
-## Create mysql `laravel_react`
+## Create mysql database `laravel_react.mysql`
 
 ## rename .env.example to .env
 Change the following in the .env file

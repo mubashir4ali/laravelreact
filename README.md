@@ -1,7 +1,5 @@
 # Laravel React
 
-## Create mysql database `laravel_react.mysql`
-
 ## rename .env.example to .env
 Change the following in the .env file
 ```
@@ -15,13 +13,16 @@ SUPER_ADMIN_PASSWORD=abcd1234
 TOKEN_EXPIRY_SECONDS=3600
 ```
 Above user will be created upon migration.
-# Super Admin cannot be delete/updated
+# Super Admin cannot be delete/updated (from UI/API)
+
+## Create mysql database `laravel_react.mysql`
+> NOTE: If you want to use sample database, use `database.sql` file
 
 # To Start Laravel
 - cd laravel
 - composer install
 - php artisan key:generate
-- php artisan migrate
+- php artisan migrate `(will do nothing in case of manually importing database file)`
 - php artisan serve
 ### keep that running in the terminal
 

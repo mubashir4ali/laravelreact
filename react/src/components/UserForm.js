@@ -139,11 +139,34 @@ class UserForm extends Component
                 <span className="error">{this.state.errors["last_name"]}</span>
                 <br/>
 
-                <input ref="email" type="text" size="30" 
+                {
+                  this.props.loggedin && this.props.loggedin.access_level?
+                  <span>
+                  {(this.props.loggedin.access_level!=="user" ?
+                    <span>
+                    <input ref="email" type="text" size="30" 
                     placeholder="Email" 
                     onChange={this.handleChange.bind(this, "email")} 
                     value={this.state.fields["email"]}/>
-                <span className="error">{this.state.errors["email"]}</span>
+                    <span className="error">{this.state.errors["email"]}</span>
+                    </span>:
+                    <span>
+                    <input ref="email" type="hidden" size="30" 
+                    placeholder="Email" 
+                    onChange={this.handleChange.bind(this, "email")} 
+                    value={this.state.fields["email"]}/>
+                    {this.state.fields["email"]}<br />
+                    <span className="error">{this.state.errors["email"]}</span>
+                    </span>)}
+                  </span>:
+                    <span>
+                    <input ref="email" type="text" size="30" 
+                    placeholder="Email" 
+                    onChange={this.handleChange.bind(this, "email")} 
+                    value={this.state.fields["email"]}/>
+                    <span className="error">{this.state.errors["email"]}</span>
+                    </span>
+                }
                 <br/>
 
                 <input ref="password" type="password" size="30" 

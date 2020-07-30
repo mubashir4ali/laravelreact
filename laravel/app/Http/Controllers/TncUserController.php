@@ -62,6 +62,11 @@ class TncUserController extends Controller
             $user->last_name = $request->last_name;
         }
 
+        if(trim($request->email))
+        {
+            $user->email = $request->email;
+        }
+
         if(trim($request->password))
         {
             $user->password = $request->password;

@@ -31,9 +31,9 @@ class TncUser extends Model
     public function setEmailAttribute($value)
     {
         # Prevent email from updating
-        if($this->email) {
+        /*if($this->email) {
             return;
-        }
+        }*/
 
         $this->attributes['email'] = strtolower($value);
     }

@@ -31,3 +31,19 @@ Open new terminal
 - cd react
 - npm install
 - npm start
+
+
+
+# Sample Output
+
+![alt text](https://github.com/mubashir4ali/laravelreact/blob/master/HomeScreen.PNG?raw=true)
+
+![alt text](https://github.com/mubashir4ali/laravelreact/blob/master/Login.PNG?raw=true)
+
+![alt text](https://github.com/mubashir4ali/laravelreact/blob/master/SignUpUserOrAdmin.PNG?raw=true)
+
+![alt text](https://github.com/mubashir4ali/laravelreact/blob/master/ListOfUsers.PNG?raw=true)
+
+![alt text](https://github.com/mubashir4ali/laravelreact/blob/master/EditUser.PNG?raw=true)
+
+![alt text](https://github.com/mubashir4ali/laravelreact/blob/master/DeleteUser.PNG?raw=true)

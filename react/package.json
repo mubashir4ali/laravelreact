@@ -10,7 +10,7 @@
     "url": "git@github.com:mubashir4ali/laravelreact.git"
   },
   "dependencies": {
-    "axios": "^0.16.0",
+    "axios": "^0.18.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",

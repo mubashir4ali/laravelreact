@@ -18,14 +18,14 @@ Above user will be created upon migration.
 # Super Admin cannot be delete/updated
 
 # To Start Laravel
-> cd laravel
-> composer install
-> php artisan migrate
-> php artisan serve
+- cd laravel
+- composer install
+- php artisan migrate
+- php artisan serve
 ### keep that running in the terminal
 
 # To Start React
 Open new terminal
-> cd react
-> npm install
-> npm start
+- cd react
+- npm install
+- npm start
